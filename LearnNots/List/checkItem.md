@@ -6,7 +6,7 @@
 定义数据源
 ```py 	
 # List of string 
-listOfStrings = ['Hi' , 'hello', 'at', 'this', 'there', 'from']
+list_str = ['Hi' , 'hello', 'at', 'this', 'china', 'from']
 ```
 
 * [方法1] 利用in 操作符
@@ -19,11 +19,11 @@ listOfStrings = ['Hi' , 'hello', 'at', 'this', 'there', 'from']
 ```py
 # check if element exist in list using 'in'
 
-if 'at' in listOfStrings :
+if 'at' in list_str :
     print("Yes, 'at' found in List : " , listOfStrings)
 
 # check if element NOT exist in list using 'in'
-if 'time' not in listOfStrings :
+if 'time' not in list_str :
     print("Yes, 'time' NOT found in List : " , listOfStrings)
 
 ```
@@ -36,29 +36,26 @@ if 'time' not in listOfStrings :
  ```py
  #  check if element exist in list using count() function
 
-if listOfStrings.count('at') > 0 :
+if list_str.count('at') > 0 :
     print("Yes, 'at' found in List : " , listOfStrings)
 
  ```
 
 
 * [方法3]: any() 函数
-
- i.e.
+利用自带的any函数 i.e.
 
 ``` py
-
 '''    
 check if element exist in list based on custom logic
 Check if any string with length 5 exist in List
 '''
-result = any(len(elem) == 5 for elem in listOfStrings)
+result = any(len(elem) == 5 for elem in list_str)
 if result:
     print("Yes, string element with size 5 found")
 
 ```
-除了里面跟条件外也可以用函数 
- i.e.
+除了里面直接跟条件外，可以简化提供阅读性，也可以用函数  i.e.
 
 ```py
 
@@ -69,7 +66,7 @@ def checkIfMatch(elem):
         return False;
 
 
-result = any(checkIfMatch for elem in listOfStrings)
+result = any(checkIfMatch for elem in list_str)
 if result:
         print("Yes, string element with size 5 found")
 ```
@@ -78,7 +75,7 @@ if result:
 
 ```py
 
-result = any(True if len(elem) == 5 else False for elem in listOfStrings)
+result = any(True if len(elem) == 5 else False for elem in list_str)
 if result:
         print("Yes, string element with size 5 found")
 
