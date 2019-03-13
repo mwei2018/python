@@ -1,13 +1,14 @@
 
+
 ## 格式化
    
    * 格式化整数和浮点数还可以指定是否补0和整数与小数的位数：
    ```py
 
    >>>print('%2d-%02d' % (3, 1))
-    3-01
+3-01
    >>>print('%.2f' % 3.1415926)
-    3.14   
+3.14   
    
    ```
 
@@ -29,15 +30,28 @@
 `   'Age: 25. Gender: True'
    ```
    
-有些时候，字符串里面的%是一个普通字符怎么办？这个时候就需要转义，用%%来表示一个%：
+ * 有些时候，字符串里面的%是一个普通字符怎么办？这个时候就需要转义，用%%来表示一个%：
     
+ * 原始字符串用前缀r表示: 比如输出路径, 原始字符串不能以单个反斜杠结尾( 换而言之，原始字符串的最后一个字符不能是反
+斜杠 )
+ ```py
+ >>> print(r'C:\nowhere') 
+C:\nowhere 
+>>> print(r'C:\Program Files\fnord\foo\bar\baz\frozz\bozz') 
+C:\Program Files\fnord\foo\bar\baz\frozz\bozz 
+
+# 但如果要指定以反斜杠结尾的原始字符串（如以反斜杠结尾的DOS路径）技巧是将反斜杠单独作为一个字符串 
+>>> print(r'C:\Program Files\foo\bar' '\\') 
+C:\Program Files\foo\bar\
+ ```
+ 
 
 ```py
  >>> 'growth rate: %d %%' % 7
     'growth rate: 7 %'
    
  ```
-format()
+* format()
 
 另一种格式化字符串的方法是使用字符串的format()方法，它会用传入的参数依次替换字符串内的占位符{0}、{1}……，不过这种方式写起来比%要麻烦得多：
 
@@ -46,8 +60,14 @@ format()
 'Hello, 小明, 成绩提升了 17.1%'
 ```
 
+* 反转字符串
+```py
+>>> print("aStr"[::-1])
+
+```
+
 ## dict和set
----
+
 
 ### dict
 
@@ -70,6 +90,18 @@ format()
 
     所以，dict是用空间来换取时间的一种方法。dict的key必须是不可变对象，通过key计算位置的算法称为哈希算法（Hash）。
 
+* dict的key设计很讲究，比如用元组作为key
+* dict迭代的是key。如果要迭代value，可以用for value in d.values()，如果要同时迭代key和value，可以用for k, v in d.items()
+* 对字典 d= {'a':24,'g':52,'i':12,'k':33}请按value值进行排序
+```py
+>>> sorted(d.items(),key=lambda x:x[1])
+
+#请按alist中元素的age由大到小排序
+>>> alist = [{'name':'a','age':20},{'name':'b','age':30},{'name':'c','age':25}]
+>>> def sort_by_age(list1):
+      return sorted(alist,key=lambda x:x['age'],reverse=True)
+```
+
  ### set   
  
  * set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。
@@ -86,11 +118,12 @@ format()
 ```py
 >>> s1 = set([1, 2, 3])
 >>> s2 = set([2, 3, 4])
->>> s1 & s2
+>>> s1 & s2  #A,B 中相同元素
 {2, 3}
 >>> s1 | s2
 {1, 2, 3, 4}
-
+>>> s1 ^ s1  #A,B 中不同元素
+{1, 4}
 ```
 
 ## 函数
@@ -171,3 +204,13 @@ Jack 24 Beijing Engineer
 尾递归是指，在函数返回的时候，调用自身本身，并且，return语句不能包含表达式。这样，编译器或者解释器就可以把尾递归做优化，使递归本身无论调用多少次，都只占用一个栈帧，不会出现栈溢出的情况。
 
 尾递归调用时，如果做了优化，栈不会增长，因此，无论多少次调用也不会导致栈溢出
+
+
+### 常用 string 函数
+   title() 首字母大写，其他小写
+   capitalize() 首字母大写，其他小写
+   upper() 全部转大写
+   strip() 去除两侧（不包括内部）空格的字符串，原序列不变
+   find() 在一个较长的字符串中查询子字符串，返回子串所在位置最左端索引，没有找到返回-1
+   count() 
+   startswith()
