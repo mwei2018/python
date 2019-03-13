@@ -6,13 +6,12 @@
    ```py
 
    >>>print('%2d-%02d' % (3, 1))
-3-01
+   3-01
    >>>print('%.2f' % 3.1415926)
-3.14   
-   
+   3.14      
    ```
 
-   * Python提供了ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符
+* Python提供了ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符
    ```py
    >>> ord('A')
     65
@@ -27,30 +26,31 @@
    * 如果你不太确定应该用什么，%s永远起作用，它会把任何数据类型转换为字符串
    ```py
    >>> 'Age: %s. Gender: %s' % (25, True)
-`   'Age: 25. Gender: True'
+  'Age: 25. Gender: True'
    ```
    
  * 有些时候，字符串里面的%是一个普通字符怎么办？这个时候就需要转义，用%%来表示一个%：
+    ```py
+   >>> 'growth rate: %d %%' % 7
+    'growth rate: 7 %'
+   
+   ```
     
  * 原始字符串用前缀r表示: 比如输出路径, 原始字符串不能以单个反斜杠结尾( 换而言之，原始字符串的最后一个字符不能是反
 斜杠 )
- ```py
- >>> print(r'C:\nowhere') 
-C:\nowhere 
->>> print(r'C:\Program Files\fnord\foo\bar\baz\frozz\bozz') 
-C:\Program Files\fnord\foo\bar\baz\frozz\bozz 
+    ```py
+   >>> print(r'C:\nowhere') 
+   C:\nowhere 
+   >>> print(r'C:\Program Files\fnord\foo\bar\baz\frozz\bozz') 
+   C:\Program Files\fnord\foo\bar\baz\frozz\bozz 
 
-# 但如果要指定以反斜杠结尾的原始字符串（如以反斜杠结尾的DOS路径）技巧是将反斜杠单独作为一个字符串 
->>> print(r'C:\Program Files\foo\bar' '\\') 
-C:\Program Files\foo\bar\
- ```
+   # 但如果要指定以反斜杠结尾的原始字符串（如以反斜杠结尾的DOS路径）技巧是将反斜杠单独作为一个字符串 
+   >>> print(r'C:\Program Files\foo\bar' '\\') 
+   C:\Program Files\foo\bar\
+    ```
  
 
-```py
- >>> 'growth rate: %d %%' % 7
-    'growth rate: 7 %'
-   
- ```
+
 * format()
 
 另一种格式化字符串的方法是使用字符串的format()方法，它会用传入的参数依次替换字符串内的占位符{0}、{1}……，不过这种方式写起来比%要麻烦得多：
