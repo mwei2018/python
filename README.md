@@ -2,6 +2,7 @@
 记录学习过程的点滴，见证python的成长之路
 
 LearnNots 主要记录学习笔记
+
 | | Folder| path| dec|
 |:---|:---|:---|:---|
 |1|Foundation|index.md|基础知识整理记录|
