@@ -45,7 +45,7 @@ def get_images_area(bg_image, images):
     one_third_width = int(width / 3)  # small image width
     # 保存每一个小切图的区域
     box_list = []
-
+    
     for x in range(3):
         for y in range(3):
             left = x * one_third_width

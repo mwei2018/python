@@ -1,0 +1,570 @@
+2019/08/01 11:31:41 PM Scrapy 1.5.2 started (bot: SyncMovie)
+2019/08/01 11:31:41 PM Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17763-SP0
+2019/08/01 11:31:41 PM Overridden settings: {'BOT_NAME': 'SyncMovie', 'NEWSPIDER_MODULE': 'SyncMovie.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SyncMovie.spiders']}
+2019/08/01 11:31:41 PM Telnet Password: a83c64ad20a68ef1
+2019/08/01 11:31:41 PM Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019/08/01 11:31:41 PM Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019/08/01 11:31:41 PM Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019/08/01 11:31:41 PM Enabled item pipelines:
+['SyncMovie.pipelines.SyncmoviePipeline']
+2019/08/01 11:31:41 PM Spider opened
+2019/08/01 11:31:41 PM Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019/08/01 11:31:41 PM Telnet console listening on 127.0.0.1:6023
+2019/08/01 11:31:41 PM Crawled (200) <GET https://maoyan.com/robots.txt> (referer: None)
+2019/08/01 11:31:41 PM Crawled (200) <GET https://maoyan.com/films> (referer: None)
+2019/08/01 11:31:42 PM 哪吒之魔童降世
+2019/08/01 11:31:42 PM 上海堡垒
+2019/08/01 11:31:42 PM 蜘蛛侠：英雄远征
+2019/08/01 11:31:42 PM 全职高手之巅峰荣耀
+2019/08/01 11:31:42 PM 烈火英雄
+2019/08/01 11:31:42 PM 扫毒2天地对决
+2019/08/01 11:31:42 PM 银河补习班
+2019/08/01 11:31:42 PM 游戏人生 零
+2019/08/01 11:31:42 PM 友情以上
+2019/08/01 11:31:42 PM 沉默的证人
+2019/08/01 11:31:42 PM 狮子王
+2019/08/01 11:31:42 PM 千与千寻
+2019/08/01 11:31:42 PM 未来机器城
+2019/08/01 11:31:42 PM 看不见的小孩
+2019/08/01 11:31:42 PM 爱宠大机密2
+2019/08/01 11:31:42 PM 碟仙
+2019/08/01 11:31:42 PM 命运之夜——天之杯II ：迷失之蝶
+2019/08/01 11:31:42 PM 回到过去拥抱你
+2019/08/01 11:31:42 PM 鼠胆英雄
+2019/08/01 11:31:42 PM 赛尔号大电影7：疯狂机器城
+2019/08/01 11:31:42 PM 隧道尽头
+2019/08/01 11:31:42 PM 白蛇：缘起
+2019/08/01 11:31:42 PM 何以为家
+2019/08/01 11:31:42 PM 跳舞吧！大象
+2019/08/01 11:31:42 PM 使徒行者2：谍影行动
+2019/08/01 11:31:42 PM 一条狗的使命2
+2019/08/01 11:31:42 PM 海蒂和爷爷
+2019/08/01 11:31:42 PM 冰雪女王4：魔镜世界
+2019/08/01 11:31:42 PM 古田军号
+2019/08/01 11:31:42 PM 若能与你共乘海浪之上
+2019/08/01 11:31:42 PM Crawled (200) <GET https://maoyan.com/films/1211270> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Scraped from <200 https://maoyan.com/films/1211270>
+{'area': '中国大陆',
+ 'category': '喜剧,动画',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-26 08:00',
+ 'ename': 'Ne Zha',
+ 'movieid': '{movieId:1211270}',
+ 'name': '哪吒之魔童降世',
+ 'url': '/films/1211270'}
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1242130> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1226558> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films?offset=30> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/337625> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1257417> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1240397> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1197417> (referer: https://maoyan.com/films)
+2019/08/01 11:31:45 PM Crawled (200) <GET https://maoyan.com/films/1254277> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Scraped from <200 https://maoyan.com/films/1242130>
+{'area': '中国大陆',
+ 'category': '剧情,历史,战争',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-01大陆上映',
+ 'ename': 'The Bugle from Gutian',
+ 'movieid': '{movieId:1242130}',
+ 'name': '古田军号',
+ 'url': '/films/1242130'}
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1218727> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1235560> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/644501> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1260459> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1207254> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1205779> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/414997> (referer: https://maoyan.com/films)
+2019/08/01 11:31:46 PM Crawled (200) <GET https://maoyan.com/films/1211698> (referer: https://maoyan.com/films)
+2019/08/01 11:31:48 PM Scraped from <200 https://maoyan.com/films/1226558>
+{'area': '中国大陆',
+ 'category': '喜剧,剧情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-26 08:00',
+ 'ename': 'Dancing Elephant',
+ 'movieid': '{movieId:1226558}',
+ 'name': '跳舞吧！大象',
+ 'url': '/films/1226558'}
+2019/08/01 11:31:48 PM 周恩来回延安
+2019/08/01 11:31:48 PM Scraped from <200 https://maoyan.com/films/337625>
+{'area': '德国,瑞士',
+ 'category': '剧情,家庭,冒险',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-05-16 18:00',
+ 'ename': 'Heidi',
+ 'movieid': '{movieId:337625}',
+ 'name': '海蒂和爷爷',
+ 'url': '/films/337625'}
+2019/08/01 11:31:49 PM Scraped from <200 https://maoyan.com/films/1257417>
+{'area': '日本',
+ 'category': '奇幻,爱情,动画',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-07 08:00',
+ 'ename': 'きみと、波にのれたら',
+ 'movieid': '{movieId:1257417}',
+ 'name': '若能与你共乘海浪之上',
+ 'url': '/films/1257417'}
+2019/08/01 11:31:50 PM Scraped from <200 https://maoyan.com/films/1240397>
+{'area': '俄罗斯',
+ 'category': '动画,冒险,奇幻',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'The Snow Queen: Mirrorlands',
+ 'movieid': '{movieId:1240397}',
+ 'name': '冰雪女王4：魔镜世界',
+ 'url': '/films/1240397'}
+2019/08/01 11:31:50 PM Scraped from <200 https://maoyan.com/films/1197417>
+{'area': '中国大陆,中国香港',
+ 'category': '剧情,动作,犯罪',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-07 08:00',
+ 'ename': 'Line Walker 2',
+ 'movieid': '{movieId:1197417}',
+ 'name': '使徒行者2：谍影行动',
+ 'url': '/films/1197417'}
+2019/08/01 11:31:55 PM Scraped from <200 https://maoyan.com/films/1254277>
+{'area': '美国',
+ 'category': '剧情,喜剧,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-05-17大陆上映',
+ 'ename': "A Dog's Journey",
+ 'movieid': '{movieId:1254277}',
+ 'name': '一条狗的使命2',
+ 'url': '/films/1254277'}
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1211345> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1229688> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1219932> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1212> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1189879> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1207237> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1245196> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM Crawled (200) <GET https://maoyan.com/films/1203673> (referer: https://maoyan.com/films)
+2019/08/01 11:31:55 PM 童童的风铃密室
+2019/08/01 11:31:55 PM 红星照耀中国
+2019/08/01 11:31:55 PM 妈妈咪鸭
+2019/08/01 11:31:55 PM 红花绿叶
+2019/08/01 11:31:55 PM 歌唱动荡的青春
+2019/08/01 11:31:55 PM 神奇马戏团之动物饼干
+2019/08/01 11:31:55 PM 最美的地方遇见你
+2019/08/01 11:31:55 PM 嗝嗝老师
+2019/08/01 11:31:55 PM 动物出击
+2019/08/01 11:31:55 PM 养家之人
+2019/08/01 11:31:55 PM 帝企鹅日记2：召唤
+2019/08/01 11:31:55 PM 好小子，好功夫
+2019/08/01 11:31:55 PM 灶神来了
+2019/08/01 11:31:55 PM 阿里巴巴三根金发
+2019/08/01 11:31:55 PM 旋风女队
+2019/08/01 11:32:02 PM Scraped from <200 https://maoyan.com/films/1235560>
+{'area': '中国大陆',
+ 'category': '爱情,动画,奇幻,动作,剧情,冒险,家庭,音乐,古装',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-01-11大陆上映',
+ 'ename': 'White Snake',
+ 'movieid': '{movieId:1235560}',
+ 'name': '白蛇：缘起',
+ 'url': '/films/1235560'}
+2019/08/01 11:32:04 PM Scraped from <200 https://maoyan.com/films/644501>
+{'area': '西班牙,阿根廷',
+ 'category': '犯罪,悬疑',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-25 18:00',
+ 'ename': 'Al final del túnel',
+ 'movieid': '{movieId:644501}',
+ 'name': '隧道尽头',
+ 'url': '/films/644501'}
+2019/08/01 11:32:04 PM Scraped from <200 https://maoyan.com/films/1207254>
+{'area': '中国大陆',
+ 'category': '喜剧,爱情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'Coward Hero',
+ 'movieid': '{movieId:1207254}',
+ 'name': '鼠胆英雄',
+ 'url': '/films/1207254'}
+2019/08/01 11:32:04 PM Scraped from <200 https://maoyan.com/films/1260459>
+{'area': '中国大陆',
+ 'category': '冒险,动画,喜剧',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'Seer Movie7:Crazy Intelligence',
+ 'movieid': '{movieId:1260459}',
+ 'name': '赛尔号大电影7：疯狂机器城',
+ 'url': '/films/1260459'}
+2019/08/01 11:32:05 PM Scraped from <200 https://maoyan.com/films/414997>
+{'area': '日本',
+ 'category': '剧情,动画,奇幻',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-12大陆上映',
+ 'ename': "Fate/stay night [Heaven' s Feel] Ⅱ. lost butterfly",
+ 'movieid': '{movieId:414997}',
+ 'name': '命运之夜——天之杯II ：迷失之蝶',
+ 'url': '/films/414997'}
+2019/08/01 11:32:05 PM Scraped from <200 https://maoyan.com/films/1205779>
+{'area': '中国大陆',
+ 'category': '青春,爱情,剧情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-26 08:00',
+ 'ename': 'Over Again',
+ 'movieid': '{movieId:1205779}',
+ 'name': '回到过去拥抱你',
+ 'url': '/films/1205779'}
+2019/08/01 11:32:06 PM Scraped from <200 https://maoyan.com/films/1211698>
+{'area': '中国大陆',
+ 'category': '恐怖,惊悚',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-06-21大陆上映',
+ 'ename': 'Mortal Ouija',
+ 'movieid': '{movieId:1211698}',
+ 'name': '碟仙',
+ 'url': '/films/1211698'}
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1229534> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1218141> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1243361> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1209269> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1198925> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/342903> (referer: https://maoyan.com/films)
+2019/08/01 11:32:06 PM Crawled (200) <GET https://maoyan.com/films/1234382> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:07 PM Scraped from <200 https://maoyan.com/films/1211345>
+{'area': '美国',
+ 'category': '喜剧,动画,冒险',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-05大陆上映',
+ 'ename': 'The Secret Life of Pets 2',
+ 'movieid': '{movieId:1211345}',
+ 'name': '爱宠大机密2',
+ 'url': '/films/1211345'}
+2019/08/01 11:32:08 PM Scraped from <200 https://maoyan.com/films/1229688>
+{'area': '中国大陆,泰国',
+ 'category': '恐怖,惊悚,悬疑',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-19大陆上映',
+ 'ename': 'Untold Body',
+ 'movieid': '{movieId:1229688}',
+ 'name': '看不见的小孩',
+ 'url': '/films/1229688'}
+2019/08/01 11:32:08 PM Scraped from <200 https://maoyan.com/films/1219932>
+{'area': '中国大陆',
+ 'category': '冒险,科幻,动画',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-19大陆上映',
+ 'ename': 'Next Gen',
+ 'movieid': '{movieId:1219932}',
+ 'name': '未来机器城',
+ 'url': '/films/1219932'}
+2019/08/01 11:32:09 PM Scraped from <200 https://maoyan.com/films/1212>
+{'area': '日本',
+ 'category': '动画,冒险,奇幻,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-06-21 08:00',
+ 'ename': '千と千尋の神隠し',
+ 'movieid': '{movieId:1212}',
+ 'name': '千与千寻',
+ 'url': '/films/1212'}
+2019/08/01 11:32:10 PM Scraped from <200 https://maoyan.com/films/1189879>
+{'area': '美国',
+ 'category': '剧情,动画,冒险',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-12大陆上映',
+ 'ename': 'The Lion King',
+ 'movieid': '{movieId:1189879}',
+ 'name': '狮子王',
+ 'url': '/films/1189879'}
+2019/08/01 11:32:28 PM Scraped from <200 https://maoyan.com/films/1207237>
+{'area': '中国大陆,中国香港',
+ 'category': '动作,犯罪',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-16大陆上映',
+ 'ename': 'Bodies At Rest',
+ 'movieid': '{movieId:1207237}',
+ 'name': '沉默的证人',
+ 'url': '/films/1207237'}
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/1207141> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/1218253> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/1284307> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/1281596> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/368109> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/341989> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films/1243904> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:29 PM Crawled (200) <GET https://maoyan.com/films?offset=0> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:30 PM Scraped from <200 https://maoyan.com/films/1229534>
+{'area': '中国大陆',
+ 'category': '剧情,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-18 08:00',
+ 'ename': 'Looking up',
+ 'movieid': '{movieId:1229534}',
+ 'name': '银河补习班',
+ 'url': '/films/1229534'}
+2019/08/01 11:32:30 PM Scraped from <200 https://maoyan.com/films/1218141>
+{'area': '中国香港,中国大陆',
+ 'category': '剧情,动作,悬疑,犯罪',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-07-05大陆上映',
+ 'ename': 'The White Storm 2',
+ 'movieid': '{movieId:1218141}',
+ 'name': '扫毒2天地对决',
+ 'url': '/films/1218141'}
+2019/08/01 11:32:30 PM Scraped from <200 https://maoyan.com/films/1243361>
+{'area': '中国大陆',
+ 'category': '灾难,动作,剧情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-01大陆上映',
+ 'ename': 'The Bravest',
+ 'movieid': '{movieId:1243361}',
+ 'name': '烈火英雄',
+ 'url': '/films/1243361'}
+2019/08/01 11:32:31 PM Scraped from <200 https://maoyan.com/films/1209269>
+{'area': '中国大陆',
+ 'category': '剧情,动画',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-16大陆上映',
+ 'ename': 'The King’s Avatar: For the Glory',
+ 'movieid': '{movieId:1209269}',
+ 'name': '全职高手之巅峰荣耀',
+ 'url': '/films/1209269'}
+2019/08/01 11:32:33 PM Scraped from <200 https://maoyan.com/films/1198925>
+{'area': '美国',
+ 'category': '动作,冒险,科幻',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-06-28大陆上映',
+ 'ename': 'Spider-Man: Far From Home',
+ 'movieid': '{movieId:1198925}',
+ 'name': '蜘蛛侠：英雄远征',
+ 'url': '/films/1198925'}
+2019/08/01 11:32:48 PM Scraped from <200 https://maoyan.com/films/342903>
+{'area': '中国大陆',
+ 'category': '科幻,战争,爱情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-09大陆上映',
+ 'ename': 'Shanghai Fortress',
+ 'movieid': '{movieId:342903}',
+ 'name': '上海堡垒',
+ 'url': '/films/342903'}
+2019/08/01 11:32:50 PM Scraped from <200 https://maoyan.com/films/1234382>
+{'area': '中国大陆',
+ 'category': '剧情,历史',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-05-15大陆上映',
+ 'ename': 'Zhou Enlai Returned To Yanan',
+ 'movieid': '{movieId:1234382}',
+ 'name': '周恩来回延安',
+ 'url': '/films/1234382'}
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1229020> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1208914> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/338400> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1279689> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1239282> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1204720> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1263074> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled (200) <GET https://maoyan.com/films/1286498> (referer: https://maoyan.com/films?offset=30)
+2019/08/01 11:32:50 PM Crawled 50 pages (at 50 pages/min), scraped 31 items (at 31 items/min)
+2019/08/01 11:32:50 PM Scraped from <200 https://maoyan.com/films/1207141>
+{'area': '中国大陆',
+ 'category': '家庭,运动',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2017-09-09大陆上映',
+ 'ename': 'Running Like Wind',
+ 'movieid': '{movieId:1207141}',
+ 'name': '旋风女队',
+ 'url': '/films/1207141'}
+2019/08/01 11:32:50 PM Scraped from <200 https://maoyan.com/films/1218253>
+{'area': '中国大陆',
+ 'category': '喜剧,动画,冒险',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2018-12-30大陆上映',
+ 'ename': 'Alibaba Three Blondes',
+ 'movieid': '{movieId:1218253}',
+ 'name': '阿里巴巴三根金发',
+ 'url': '/films/1218253'}
+2019/08/01 11:32:51 PM Scraped from <200 https://maoyan.com/films/1284307>
+{'area': '中国大陆',
+ 'category': '喜剧,爱情,奇幻',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'Kitchen God',
+ 'movieid': '{movieId:1284307}',
+ 'name': '灶神来了',
+ 'url': '/films/1284307'}
+2019/08/01 11:33:24 PM Scraped from <200 https://maoyan.com/films/1281596>
+{'area': '中国大陆',
+ 'category': '喜剧,家庭,动作',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-05-31大陆上映',
+ 'ename': 'Good boy and KongFu',
+ 'movieid': '{movieId:1281596}',
+ 'name': '好小子，好功夫',
+ 'url': '/films/1281596'}
+2019/08/01 11:35:02 PM Scraped from <200 https://maoyan.com/films/341989>
+{'area': '爱尔兰,卢森堡,加拿大',
+ 'category': '剧情,动画,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-01-11大陆上映',
+ 'ename': 'The Breadwinner',
+ 'movieid': '{movieId:341989}',
+ 'name': '养家之人',
+ 'url': '/films/341989'}
+2019/08/01 11:35:03 PM Scraped from <200 https://maoyan.com/films/368109>
+{'area': '法国',
+ 'category': '纪录片',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2018-10-12大陆上映',
+ 'ename': 'March of the Penguins 2: The Call',
+ 'movieid': '{movieId:368109}',
+ 'name': '帝企鹅日记2：召唤',
+ 'url': '/films/368109'}
+2019/08/01 11:35:04 PM Scraped from <200 https://maoyan.com/films/1243904>
+{'area': '中国大陆',
+ 'category': '剧情,冒险,科幻,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-04-30大陆上映',
+ 'ename': 'Animal Rescue Squad',
+ 'movieid': '{movieId:1243904}',
+ 'name': '动物出击',
+ 'url': '/films/1243904'}
+2019/08/01 11:35:04 PM 哪吒之魔童降世
+2019/08/01 11:35:04 PM Filtered duplicate request: <GET https://maoyan.com/films/1211270> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019/08/01 11:35:04 PM Crawled 50 pages (at 0 pages/min), scraped 38 items (at 7 items/min)
+2019/08/01 11:35:04 PM 上海堡垒
+2019/08/01 11:35:04 PM 蜘蛛侠：英雄远征
+2019/08/01 11:35:04 PM 全职高手之巅峰荣耀
+2019/08/01 11:35:04 PM 烈火英雄
+2019/08/01 11:35:04 PM 扫毒2天地对决
+2019/08/01 11:35:04 PM 银河补习班
+2019/08/01 11:35:04 PM 游戏人生 零
+2019/08/01 11:35:04 PM 友情以上
+2019/08/01 11:35:04 PM 沉默的证人
+2019/08/01 11:35:04 PM 狮子王
+2019/08/01 11:35:04 PM 千与千寻
+2019/08/01 11:35:04 PM 未来机器城
+2019/08/01 11:35:04 PM 看不见的小孩
+2019/08/01 11:35:04 PM 爱宠大机密2
+2019/08/01 11:35:04 PM 碟仙
+2019/08/01 11:35:04 PM 命运之夜——天之杯II ：迷失之蝶
+2019/08/01 11:35:04 PM 回到过去拥抱你
+2019/08/01 11:35:04 PM 鼠胆英雄
+2019/08/01 11:35:04 PM 赛尔号大电影7：疯狂机器城
+2019/08/01 11:35:04 PM 隧道尽头
+2019/08/01 11:35:04 PM 白蛇：缘起
+2019/08/01 11:35:04 PM 何以为家
+2019/08/01 11:35:04 PM 跳舞吧！大象
+2019/08/01 11:35:04 PM 使徒行者2：谍影行动
+2019/08/01 11:35:04 PM 一条狗的使命2
+2019/08/01 11:35:04 PM 海蒂和爷爷
+2019/08/01 11:35:04 PM 冰雪女王4：魔镜世界
+2019/08/01 11:35:04 PM 古田军号
+2019/08/01 11:35:04 PM 若能与你共乘海浪之上
+2019/08/01 11:35:04 PM Scraped from <200 https://maoyan.com/films/1229020>
+{'area': '印度',
+ 'category': '剧情,喜剧',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2018-10-12大陆上映',
+ 'ename': 'Hichki',
+ 'movieid': '{movieId:1229020}',
+ 'name': '嗝嗝老师',
+ 'url': '/films/1229020'}
+2019/08/01 11:35:04 PM Scraped from <200 https://maoyan.com/films/1208914>
+{'area': '中国大陆',
+ 'category': '爱情,剧情,悬疑',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'The Fairest Encounter',
+ 'movieid': '{movieId:1208914}',
+ 'name': '最美的地方遇见你',
+ 'url': '/films/1208914'}
+2019/08/01 11:35:05 PM Scraped from <200 https://maoyan.com/films/1279689>
+{'area': '中国大陆',
+ 'category': '剧情,爱情,青春',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-02大陆上映',
+ 'ename': 'Song for Turbulent Youth',
+ 'movieid': '{movieId:1279689}',
+ 'name': '歌唱动荡的青春',
+ 'url': '/films/1279689'}
+2019/08/01 11:35:06 PM Scraped from <200 https://maoyan.com/films/338400>
+{'area': '美国,西班牙,中国大陆,韩国',
+ 'category': '喜剧,动画,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2018-07-21大陆上映',
+ 'ename': 'Magical Circus: Animal Crackers',
+ 'movieid': '{movieId:338400}',
+ 'name': '神奇马戏团之动物饼干',
+ 'url': '/films/338400'}
+2019/08/01 11:35:07 PM Scraped from <200 https://maoyan.com/films/1204720>
+{'area': '中国大陆,美国',
+ 'category': '动画,冒险,家庭',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2018-03-09大陆上映',
+ 'ename': 'Duck Duck Goose',
+ 'movieid': '{movieId:1204720}',
+ 'name': '妈妈咪鸭',
+ 'url': '/films/1204720'}
+2019/08/01 11:35:08 PM Scraped from <200 https://maoyan.com/films/1239282>
+{'area': '中国大陆',
+ 'category': '爱情,剧情',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-05大陆上映',
+ 'ename': 'Red Flowers and Green Leaves',
+ 'movieid': '{movieId:1239282}',
+ 'name': '红花绿叶',
+ 'url': '/films/1239282'}
+2019/08/01 11:35:08 PM Scraped from <200 https://maoyan.com/films/1263074>
+{'area': '中国大陆',
+ 'category': '历史,战争',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-08大陆上映',
+ 'ename': 'The Secret of China',
+ 'movieid': '{movieId:1263074}',
+ 'name': '红星照耀中国',
+ 'url': '/films/1263074'}
+2019/08/01 11:35:09 PM Scraped from <200 https://maoyan.com/films/1286498>
+{'area': '中国大陆',
+ 'category': '悬疑,惊悚',
+ 'cover': 'https://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png',
+ 'date': '2019-08-09大陆上映',
+ 'ename': 'Bell Chamber',
+ 'movieid': '{movieId:1286498}',
+ 'name': '童童的风铃密室',
+ 'url': '/films/1286498'}
+2019/08/01 11:35:09 PM Closing spider (finished)
+2019/08/01 11:35:09 PM Dumping Scrapy stats:
+{'downloader/request_bytes': 20896,
+ 'downloader/request_count': 50,
+ 'downloader/request_method_count/GET': 50,
+ 'downloader/response_bytes': 867963,
+ 'downloader/response_count': 50,
+ 'downloader/response_status_count/200': 50,
+ 'dupefilter/filtered': 31,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 8, 1, 15, 35, 9, 307841),
+ 'item_scraped_count': 46,
+ 'log_count/DEBUG': 174,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 3,
+ 'response_received_count': 50,
+ 'scheduler/dequeued': 49,
+ 'scheduler/dequeued/memory': 49,
+ 'scheduler/enqueued': 49,
+ 'scheduler/enqueued/memory': 49,
+ 'start_time': datetime.datetime(2019, 8, 1, 15, 31, 41, 477305)}
+2019/08/01 11:35:09 PM Spider closed (finished)
