@@ -66,6 +66,27 @@ class move(scrapy.Spider):
         item["category"]=ul_info[0]
         item["area"] =str.strip(ul_info[1]).splitlines()[0]
         item["date"] = ul_info[2][:16]
+		item["desc"] = response.css("div.tab-desc.tab-content").css("span.dra::text").extract_first()
+
+        actors = response.css("li.celebrity.actor")
+        movie_actors = []
+        if any(actors):
+            for actor in actors:
+                actor_photo = actor.css("img")[0].attrib["data-src"]
+                actor_name = actor.css(".name::text").extract_first()
+                actor_role = actor.css(".role::text").extract_first()
+                movie_actors.append(
+                    {
+                        "actor_photo": actor_photo,
+                        "actor_name": actor_name,
+                        "actor_role": actor_role,
+                    }
+                )
+        item["actor"] = movie_actors
+        """
+        hxs.select('//dl[@class="clearfix"]//img/@src').extract()
+        response.css('.product-list img::attr(src)').extract() # extract_first() to get only one
+        """
 
         # 把取到的数据提交给pipline处理
         yield item
