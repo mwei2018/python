@@ -12,7 +12,7 @@ class SyncmoviePipeline(object):
     def __init__(self):
         # 建立MongoDB数据库连接
         client = pymongo.MongoClient(
-            "mongodb://mwei:1qaz!QAZ@ds016058.mlab.com:16058/app_db", connect=False
+            "mongodb://mwei:*****@ds016058.mlab.com:16058/app_db", connect=False
         )
         # 连接所需数据库,ScrapyChina为数据库名
         self.db = client["app_db"]

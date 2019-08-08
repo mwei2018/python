@@ -5,32 +5,34 @@ import sys
 import gflags
 import logging
 import db_util
+from PyQt5 import QtWidgets
+from main_window import mywindow  
 
 Flags = gflags.FLAGS
-
 gflags.DEFINE_boolean("debug", True, "whether debug")
-
 
 def main(argv):
     Flags(argv)
+    #配置logging格式
+    log_format="%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s",
     logging.basicConfig(
         level=logging.DEBUG,
-        format="%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s",
+        format=log_format,
         datefmt="%a, %d %b %Y %H:%M:%S",
         filename="logger.log",
         filemode="w",
     )
 
     logging.warning(Flags.debug)
-    client = db_util.MongoDBManager(lazy_connection=True)
-    #result = client.find_match("courses", "")
+    #实例化db处理类
+    client = db_util.MongoDBManager(lazy_connection=True) 
 
-    # 按照类型查找
-    category_key = "爱情"
-    query = {"category": {"$regex": category_key, "$options": "i"}}
-    result = client.find_match("SyncmovieItem", query)
-    print(list(result))
-
+   #启动主窗体
+    logging.info('启动主窗体')
+    app =QtWidgets.QApplication([])
+    application = mywindow(client) 
+    application.show()
+    sys.exit(app.exec())
 
 if __name__ == "__main__":
     main(sys.argv)

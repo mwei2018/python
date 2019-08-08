@@ -14,7 +14,7 @@ gflags.DEFINE_string(
     "move_mongodb_server_user", "mwei", "address of the Mongo database caching."
 )
 gflags.DEFINE_string(
-    "move_mongodb_server_pwd", "1qaz!QAZ", "address of the Mongo database caching."
+    "move_mongodb_server_pwd", "*****", "address of the Mongo database caching."
 )
 gflags.DEFINE_string(
     "move_mongodb_server_port", "16058", "address of the Mongo database caching."
@@ -126,12 +126,9 @@ class MongoDBManager:
         """
         query_data = []
         try:
-            query_data = self.db.collection_name.find(query)
+            query_data = self.db[collection_name].find(query)
         except pymongo.errors.OperationFailure as err:
             print("PyMongo ERROR:", err, "\n")
-
-        # table = self.client.collection_name.matches
-        # return table.find()
         return query_data
 
     @_silent_connection_failure
