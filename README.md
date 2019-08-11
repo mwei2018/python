@@ -17,4 +17,5 @@ Example 主要记录自己的example 和 demo
 |:---|:---|:---|:---|
 |1|01tushare|股票数据收集与分析|tushare，  mongodb， pandas ，pyecharts |
 |1|02merge-image|9张图片合成九宫格|PIL ，  os ， re |
+|1|03move|python 爬取猫眼电影数据存储Mongondb并显示QT的GUI上|scrapy ，  gflags ， logging, PyQt5 ,functools, pymongo|
 
